@@ -1,0 +1,278 @@
+.footer{
+  border-top: 1px solid #293141;
+  padding: 80px 0;
+  @media screen and (max-width: 750px) {
+    padding: 40px 0;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+  .footer-nav{
+    display: flex;
+    align-items: center;
+    .footer-list{
+      flex: 1;
+      .img-box{
+        width: 100%;
+        img{
+          height: 100%;
+        }
+      }
+      .title{
+        font-size: 20px;
+        color: #fff;
+        margin-top: 35px;
+        text-align: center;
+      }
+    }
+  }
+  .contact-w{
+    width: 1014px;
+    margin: 120px auto 176px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      padding: 0 20px;
+      margin: 50px auto;
+    }
+    .title{
+      font-size: 49px;
+      color: #C4B57A;
+      margin-bottom: 68px;
+    }
+    .example{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 30px;
+      color: rgba(196,181,122,.4);
+      margin-bottom: 37px;
+      @media screen and (max-width: 1200px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 13px;
+      }
+    }
+    .form-w{
+      width: 100%;
+      .input-w{
+        width: 100%;
+        &.email-w{
+          display: flex;
+          align-items: center;
+          border: 1px solid #C4B57A;
+          color: #78735E;
+          font-size: 20px;
+          .input-email{
+            flex: 1;
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            color: #78735E;
+            font-size: 20px;
+            padding-left: 10px;
+          }
+        }
+        &.textarea-w{
+          margin-top: 28px;
+          display: flex;
+          border: 1px solid #C4B57A;
+          .label{
+            line-height: 44px;
+          }
+          .input-textarea{
+            flex: 1;
+            border: none;
+            box-sizing: border-box;
+            width: 100%;
+            height: 162px;
+            outline: none;
+            resize: none;
+            background-color: #2E3748;
+            color: #78735E;
+            font-size: 20px;
+            line-height: 44px;
+          }
+        }
+        .label{
+          font-size: 30px;
+          color: rgba(196,181,122,.4);
+          padding-left: 20px;
+          @media screen and (max-width: 1200px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .copyright-w{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      padding: 0 20px;
+    }
+    @media screen and (max-width: 750px) {
+      width: 100%;
+      padding: 0 20px;
+      flex-direction: column;
+    }
+    .title{
+      font-size: 20px;
+    }
+    .desc{
+      font-size: 16px;
+      line-height: 1.5;
+      width: 410px;
+      margin-top: 10px;
+      @media screen and (max-width: 750px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .right{
+      @media screen and (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+      }
+      .title{
+        margin-bottom: 18px;
+      }
+      .desc2{
+        margin-bottom: 10px;
+        font-size: 15px;
+        display: block;
+        text-decoration: underline;
+        color :#fff;
+        &.desc2-first {
+          color: #C4B57A;
+        }
+      }
+    }
+  }
+}
+.page-title{
+  width: 600px;
+  text-align: center;
+  font-size: 49px;
+  color: #C4B57A;
+  border-bottom: 3px solid #C4B57A;
+  margin: 68px auto 0;
+  @media screen and (max-width: 750px) {
+    width: 40%;
+    font-size: 30px;
+    min-width: 200px;
+  }
+}
+.news-w{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .news-uls{
+    margin-top: 136px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1521px;
+    @media screen and (max-width: 1521px) {
+      width: 932px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      flex-direction: column;
+      padding: 0 10px;
+      margin-top: 30px;
+    }
+    .news-list{
+      cursor: pointer;
+      width: 441px;
+      height: 456px;
+      border: 1px solid #C4B57A;
+      display: flex;
+      flex-direction: column;
+      margin-right: 99px;
+      transition: all .2s linear;
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+      &:nth-child(-n + 3){
+        margin-bottom: 109px;
+      }
+      @media screen and (max-width: 1521px) {
+        margin-bottom: 109px;
+        margin-right: 50px;
+        &:nth-child(3n){
+          margin-right: 50px;
+        }
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        margin-right: 0 !important;
+        margin-bottom: 50px !important;
+      }
+      @media screen and (max-width: 450px){
+        width: 100%;
+        height: auto;
+      }
+      &:hover{
+        box-shadow: 0 10px 15px rgba(46,55,72, .5);
+        transform: translate3d(0,-2px,0);
+      }
+      .img-box{
+        width: 100%;
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+      .news-content{
+        width: 100%;
+        padding: 10px 25px 24px 25px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .news-title{
+          font-size: 17px;
+          color: #C4B57A;
+        }
+        .data{
+          font-size: 14px;
+          color: #cfcfcf;
+          margin: 10px 0;
+        }
+        .desc{
+          font-size: 16px;
+          color: #fff;
+          line-height: 1.5;
+          flex: 1;
+        }
+        .more-w{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 16px;
+          color: #C4B57A;
+          margin-top: 20px;
+          .read{
+            padding-bottom: 6px;
+          }
+          .more-right{
+            width: 33px;
+          }
+        }
+      }
+    }
+  }
+}
